@@ -23,6 +23,7 @@ export class ProfileService {
             user.fullName = req.body.fullName,
                 user.email = req.body.email,
                 user.college = req.body.college,
+                user.institute= req.body.institute,
                 user.userMobile = req.body.userMobile,
                 user.dateOfBirth = req.body.dob,
                 user.hometown = req.body.hometown,
@@ -39,6 +40,7 @@ export class ProfileService {
         }
         else {
             user.college = req.body.college,
+            user.institute= req.body.institute,
                 user.department = req.body.department,
                 user.state = req.body.state,
                 user.degree = req.body.degree,
@@ -54,6 +56,8 @@ export class ProfileService {
         }
         else {
             user.companyName = req.body.companyName,
+            user.institute= req.body.institute,
+            user.college=req.body.college,
                 user.skill_id = req.body.skill
             return await user.save()
         }

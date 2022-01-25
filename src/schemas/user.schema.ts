@@ -16,6 +16,7 @@ export const UserSchema = new mongoose.Schema({
     
     roles: [],
     college: String,
+    institute:String,
     userMobile: Number,
     dateOfBirth: Date,
     hometown: String,
@@ -28,7 +29,7 @@ export const UserSchema = new mongoose.Schema({
     percentage: Number,
     companyName: String,
     skill: String,
-    skill_id: String
+    skill_id:String
 
     // created_at: { type: Date, default: Date.now }
 })

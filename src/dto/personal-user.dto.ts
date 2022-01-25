@@ -6,7 +6,9 @@ export class UserDto{
     email: string;
     college:string
     password: string
-    userMobile: Number
+    institute: string
+ 
+    userMobile:string
     dateOfBirth: Date
     hometown: string
     address: string
